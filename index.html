@@ -38,16 +38,16 @@
       <section class="mx-auto w-4/5 bg-green-900 mt-16" id="top-banner">
         <div class="container mx-auto flex flex-col space-y-8 ">
           <h1 class="text-4xl text-white font-bold -tracking-wider" id="heading">Simple Weather App</h1>
-          <form class="flex lg:flex-row lg:space-x-6 flex-col space-y-6">
-            <input class="bg-transparent border-transparent border-b-2 border-b-white w-72 pt-4 text-3xl border-white active:bg-transparent active:border-b-2 focus:outline-none placeholder:text-white text-white" type="text" placeholder="Search for a city" autofocus>
-            <button class="px-5 py-2 bg-red-700 rounded-lg text-xl text-white w-11/12 lg:w-auto" type="submit">SUBMIT</button>
-            <span class="msg"></span>
+          <form class="flex lg:flex-row lg:space-x-6 flex-col space-y-6" id="form">
+            <input class="bg-transparent border-transparent border-b-2 border-b-white w-72 pt-4 text-3xl border-white active:bg-transparent active:border-b-2 focus:outline-none placeholder:text-white text-white" type="text" placeholder="Search for a city" autofocus id="input">
+            <button class="px-5 py-2 bg-red-700 rounded-lg text-xl text-white w-11/12 lg:w-auto" type="submit" id="submit">SUBMIT</button>
+            <span class="" id="msg"></span>
           </form>
         </div>
       </section>
-      <section class="ajax-section">
+      <section class="mt-5" id="ajax-section">
         <div class="container">
-          <ul class="cities"></ul>
+          <ul class="lg:grid lg:grid-cols-4 lg:gap-4 flex flex-col space-y-6" id="cities"></ul>
         </div>
       </section>
       <footer class="page-footer text-white w-4/5 mx-auto mt-12">
@@ -56,6 +56,8 @@
           </small>
         </div>
       </footer>
+
+      <script src="./main.js"></script>
 </body>
 </html>
 
